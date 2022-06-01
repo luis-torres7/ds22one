@@ -1,0 +1,30 @@
+//
+// describir
+//
+
+sea  ​​nodo1 = {
+ datos : nulo ,
+ siguiente : nulo
+}
+
+sea  ​​nodo2 = {
+ datos : nulo ,
+ siguiente : nulo
+}
+
+sea  ​​nodo3 = {
+ datos : nulo ,
+ siguiente : nulo
+}
+
+
+nodo3 . datos = 'c'
+nodo2 . datos = 'b'
+nodo1 . datos = 'a'
+
+nodo1 . siguiente = nodo2
+nodo2 . siguiente = nodo3
+
+nodo1 . siguiente _ datos //salidas QM
+nodo2 . siguiente _ datos //salidas QM
+nodo3 . siguiente _ datos //salidas QM
