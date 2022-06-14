@@ -1,0 +1,31 @@
+int isTriangular(int** arr, int r, int c){
+    int c1 =0,c2 = 0;
+    for(int i =0; i < r; i++ ){
+        for(int j =0; j < c; j++){
+            if(i == j){
+                if(*(*(arr+i)+j) == 0){
+                    return 0;//false, ni es superio ni inferior
+
+                    //diferentes de cero
+                }
+            }
+            if(j > i){
+                if(*(*(arr+i)+j) != 0){
+                    c1++;
+                }
+            }else if( j < i){
+                if(*(*(arr+i)+j) != 0){
+                    c2++;
+                }
+            }           
+        }
+    }
+    if(c1 == 0){
+        return -1;//matriz superior
+    }else if(c2 == 0){
+        return 1;//matriz inferior
+    }else{
+        return 0;//no es nada
+    }
+     
+}
